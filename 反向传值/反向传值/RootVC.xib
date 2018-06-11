@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootVC">
+            <connections>
+                <outlet property="appDelegateBtn" destination="MjF-jg-FcA" id="2Tf-M7-fdu"/>
+                <outlet property="blockBtn" destination="gYt-8s-oDh" id="rT6-fu-WVW"/>
+                <outlet property="delegateBtn" destination="osM-c2-D4h" id="MJ2-HH-wVR"/>
+                <outlet property="notificationBtn" destination="9PR-Ns-RBj" id="hh1-4w-cXm"/>
+                <outlet property="vcBtn" destination="aIX-cg-F6o" id="1uN-1Z-69t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osM-c2-D4h">
+                    <rect key="frame" x="156" y="122" width="62" height="30"/>
+                    <state key="normal" title="代理传值"/>
+                    <connections>
+                        <action selector="delegateBtnAction" destination="-1" eventType="touchUpInside" id="7QN-g0-UEn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIX-cg-F6o">
+                    <rect key="frame" x="149" y="180" width="77" height="30"/>
+                    <state key="normal" title="控制器传值"/>
+                    <connections>
+                        <action selector="ViewControllerAction:" destination="-1" eventType="touchUpInside" id="IKF-Ip-3DN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PR-Ns-RBj">
+                    <rect key="frame" x="156" y="246" width="62" height="30"/>
+                    <state key="normal" title="通知传值"/>
+                    <connections>
+                        <action selector="NotificationBtn:" destination="-1" eventType="touchUpInside" id="cuK-Pb-WSe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYt-8s-oDh">
+                    <rect key="frame" x="153" y="318" width="68" height="30"/>
+                    <state key="normal" title="block传值"/>
+                    <connections>
+                        <action selector="blockBtnAction" destination="-1" eventType="touchUpInside" id="yjI-ro-3Qp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjF-jg-FcA">
+                    <rect key="frame" x="127" y="54" width="120" height="30"/>
+                    <state key="normal" title="AppDelegate传值"/>
+                    <connections>
+                        <action selector="AppDelegateBtnAction" destination="-1" eventType="touchUpInside" id="Y8B-z3-6yg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93184298529999998" green="1" blue="0.26478223789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aIX-cg-F6o" firstAttribute="top" secondItem="osM-c2-D4h" secondAttribute="bottom" constant="26" id="7xc-cZ-Wor"/>
+                <constraint firstItem="MjF-jg-FcA" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="51" id="9ld-SI-pq2"/>
+                <constraint firstItem="osM-c2-D4h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dx2-6V-Btx"/>
+                <constraint firstItem="gYt-8s-oDh" firstAttribute="top" secondItem="9PR-Ns-RBj" secondAttribute="bottom" constant="42" id="RaR-vl-tOZ"/>
+                <constraint firstItem="aIX-cg-F6o" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eg1-Jc-cfB"/>
+                <constraint firstItem="gYt-8s-oDh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ets-7C-MUU"/>
+                <constraint firstItem="9PR-Ns-RBj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ghy-0t-2Tv"/>
+                <constraint firstItem="MjF-jg-FcA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gnX-0z-wtu"/>
+                <constraint firstItem="9PR-Ns-RBj" firstAttribute="top" secondItem="aIX-cg-F6o" secondAttribute="bottom" constant="38" id="mF3-dR-ZMO"/>
+                <constraint firstItem="osM-c2-D4h" firstAttribute="top" secondItem="MjF-jg-FcA" secondAttribute="bottom" constant="21" id="vv2-Z4-GIg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
